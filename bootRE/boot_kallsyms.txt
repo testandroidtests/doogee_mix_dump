@@ -1,0 +1,11 @@
+[+] Kernel successfully decompressed in-memory (the offsets that follow will be given relative to the decompressed binary)
+[+] Version string: Linux version 4.4.15+ (release@release15) (gcc version 4.9 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Jan 18 17:27:41 CST 2018
+[+] Guessed architecture: aarch64 successfully in 3.2309043407440186 seconds
+Traceback (most recent call last):
+  File "/media/android/ab5d60f6-9904-42cf-9ca2-c9af2dc4f3da/AC101BOX/androiddumps/dumpyara/vmlinux-to-elf/vmlinux_to_elf/kallsyms_finder.py", line 960, in <module>
+    kallsyms = KallsymsFinder(obtain_raw_kernel_from_file(kernel_bin.read()), args.bit_size)
+  File "/media/android/ab5d60f6-9904-42cf-9ca2-c9af2dc4f3da/AC101BOX/androiddumps/dumpyara/vmlinux-to-elf/vmlinux_to_elf/kallsyms_finder.py", line 186, in __init__
+    self.find_kallsyms_token_table()
+  File "/media/android/ab5d60f6-9904-42cf-9ca2-c9af2dc4f3da/AC101BOX/androiddumps/dumpyara/vmlinux-to-elf/vmlinux_to_elf/kallsyms_finder.py", line 300, in find_kallsyms_token_table
+    raise ValueError('This structure is not a kallsyms_token_table')
+ValueError: This structure is not a kallsyms_token_table
